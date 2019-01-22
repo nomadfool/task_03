@@ -2,9 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>List</title>
+        <title>Restaurant List</title>
     </head>
     <body>
-
+    	{% for x in my_list %}
+        <ul>
+            <li>
+                <h1>{{x.restaurant_name}}</h1>
+            </li>
+            <li>
+                <p>{{x.food_type}}</p>
+            </li>
+        </ul><br>
+    {% endfor %}
     </body>
 </html>
